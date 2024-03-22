@@ -1,7 +1,26 @@
 import React from 'react'
+import { useState } from 'react'
+import { useCallback } from 'react'
 import "./ContactUs.css"
 
 export default function EnhancedContacUs() {
+
+const STATE = {
+  fullName:'',
+  emailAddress:'',
+  subject:'',
+  message:'',
+}
+  const [state,setState]=useState(STATE)
+
+  const handleChange =useCallback((e)=>{
+setState(prv=>{
+  return{
+    ...prv,
+     [e.target.name]:e.target.value,
+  }
+})
+  },[]) 
     return (
        <>
        <div className="contact-page section">
@@ -35,30 +54,30 @@ export default function EnhancedContacUs() {
               <div className="col-lg-12">
                 <fieldset>
                   <label htmlFor="name">Full Name</label>
-                  <input type="name" name="name" id="name" placeholder="Your Name..." required/>
+                  <input type="name" name="fullName" onChange={handleChange} value={state.fullName} placeholder="Your Name..." required/>
                 </fieldset>
               </div>
               <div className="col-lg-12">
                 <fieldset>
                   <label htmlFor="email">Email Address</label>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required=""/>
+                  <input type="text" name="email" id="email" onChange={handleChange} value={state.email} pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required=""/>
                 </fieldset>
               </div>
               <div className="col-lg-12">
                 <fieldset>
                   <label htmlFor="subject">Subject</label>
-                  <input type="subject" name="subject" id="subject" placeholder="Subject..." />
+                  <input type="subject" name="subject" onChange={handleChange} value={state.subject} id="subject" placeholder="Subject..." />
                 </fieldset>
               </div>
               <div className="col-lg-12">
                 <fieldset>
                   <label htmlFor="message">Message</label>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  <textarea name="message" id="message" onChange={handleChange} value={state.message} placeholder="Your Message"></textarea>
                 </fieldset>
               </div>
               <div className="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" className="orange-button">Send Message</button>
+                  <button type="submit" id="form-submit"  onChange={handleChange} className="orange-button">Send Message</button>
                 </fieldset>
               </div>
             </div>

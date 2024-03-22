@@ -178,7 +178,6 @@ const PropertiesComp = () => {
                 <li>Bedrooms: <span>6</span></li>
                 <li>Bathrooms: <span>5</span></li>
                 <li>Area: <span>450m2</span></li>
-                <li>Floor: <span>3</span></li>
                 <li>Parking: <span>8 spots</span></li>
               </ul>
               <div className="main-button">
