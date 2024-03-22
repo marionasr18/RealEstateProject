@@ -1,0 +1,13 @@
+ .proMaincontainer {
+   
+
+} 
+.mainContainerHeader{
+    background-image: radial-gradient(circle, #9db8ca, #66a8eb); 
+    /* background-image: url("houses.jpg");  */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: '20px';
+    /* padding: 20px; */
+    
+}

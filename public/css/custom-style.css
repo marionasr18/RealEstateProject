@@ -1,0 +1,221 @@
+.appColorBlue {
+  background-color: #61ccec
+}
+
+.appColorGreen {
+  background-color: #68c740 !important
+}
+
+.appTextColorGreen {
+  color: #68c740 !important
+}
+
+.appColorGreen .form-check-input:focus,
+.appColorGreen .form-control:focus,
+.appColorGreen .form-select:focus {
+  background-color: #68c740 !important;
+  border-color: #68c740 !important;
+  box-shadow: 0 0 0 0.1rem #68c740 !important;
+}
+
+#mainBodyContainer {
+  padding: 10px;
+  height: calc(100% - 120px);
+}
+
+.mandatoryRed,
+.redStar {
+  color: red;
+  margin-top: 0 !important;
+}
+
+.form-check-input:focus,
+.form-control:focus,
+.form-select:focus {
+  border-color: #61ccec !important;
+  box-shadow: 0 0 0 0.1rem #61ccec !important;
+}
+
+.form-check-input:checked {
+  background-color: #61ccec !important;
+  border-color: #61ccec !important;
+}
+
+.list-group-item {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.circleNavMainContainer .col-4 {
+  text-align: center;
+}
+
+.circleNavContainer {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background-color: #61ccec;
+  border-radius: 50%;
+  margin: auto;
+  text-align-last: center;
+}
+
+.circleNavContainer img,
+.circleNavContainer p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#signInAsMainContainer .circleNavContainer img {
+  border-radius: 50%;
+}
+
+.circleNavDescription {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(108 108 108);
+}
+
+.circleAddNew {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 40px;
+  right: 10px;
+  background-color: #61ccec;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 0;
+  text-align-last: center;
+}
+
+.circleAddNew p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottomButtonContainer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  height: 50px;
+  background-color: #fff;
+}
+
+.bottomButtonContainer .bottomButtonContainerAddNew {
+  width: fit-content !important;
+  padding: 5px 30px;
+}
+
+.bottomButtonContainer .btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  /* bottom: 10px; */
+  width: 80%;
+  margin: auto;
+  background-color: #61ccec;
+  border-radius: 20px;
+  border: none;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: bolder;
+  color: #61ccec;
+}
+
+.bigToggleContainerArrow {
+  height: 20px;
+  width: 20px;
+  float: right;
+  font-size: 35px;
+  transform: rotate(90deg);
+  padding-left: 6px
+}
+
+.blueBackgroundDiv {
+  background-color: #bcddff85;
+  padding: 10px 0;
+}
+
+.dropdown-toggle {
+  background: none !important;
+  border: none !important;
+  color: black !important;
+  font-size: 25px !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.progress-bar {
+  background-color: #61ccec !important
+}
+
+.appointmentTime {
+  width: calc(33% - 40px) !important;
+  border: 1px solid rgb(212, 206, 206);
+  /* border-radius: 20px; */
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.showPassword {
+  position: relative;
+}
+
+.showPassword svg {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.form-select::placeholder,
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(159, 159, 159) !important;
+}
+
+.form-select:-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(159, 159, 159) !important;
+
+}
+
+.form-select::-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(159, 159, 159) !important;
+
+}
+
+.btn {
+  font-weight: bold !important;
+}
+
+.react-tel-input {
+  height: 38px;
+}
+
+.react-tel-input .form-control {
+  width: 100% !important;
+  border-color: #dee2e6 !important;
+  height: 38px !important;
+}

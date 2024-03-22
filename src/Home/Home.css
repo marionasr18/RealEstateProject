@@ -1,0 +1,15 @@
+#homeMainContainer {
+    height: 100%;
+}
+
+/* #HospImageContainer {
+    height: fit-content;
+} */
+
+.homeNavMainContainer {
+    margin-top: 20px;
+}
+
+#homeMainContainer .bottomButtonContainer .btn {
+    background-color: #68c740;
+}
