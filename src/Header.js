@@ -49,9 +49,9 @@ const Header = () => {
                 <div className="row">
                     <div className="col-12">
                         <nav className="main-nav">
-                            <a href="index.html" className="logo">
-                                <h1>Villa</h1>
-                            </a>
+                            <div className="col-4 mt-3 title">
+                                Hojozat Holiday
+                            </div>
                             <ul className="nav">
                                 <li key="homeLink"><a onClick={() => navigateTo("Home")} className={loc.pathname.includes('Home') ? "active" : ''}>Home</a></li>
                                 <li key="PropertiesLink"><a onClick={() => navigateTo("Properties")} className={loc.pathname.includes('Properties') ? "active" : ''}>Properties</a></li>
